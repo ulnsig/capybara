@@ -31,7 +31,7 @@ async def on_message(msg):
 
 	elif msg.content.startswith('-助けて'):
 		await msg.channel.send('"-カピバラ"と書くと、私は答えます!\n その他の利用可能な言語: EN, JA, RU')
-		
+
 
 if __name__ == '__main__':
 	client.run(os.getenv("TOKEN"))
