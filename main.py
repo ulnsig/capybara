@@ -34,4 +34,8 @@ async def on_message(msg):
 
 
 if __name__ == '__main__':
-	client.run(os.getenv("TOKEN"))
+	try:
+		client.run(os.getenv("TOKEN"))
+	except Exception as e:
+		print(e)
+		os.system('python3 -m pip install -U discord.py')
